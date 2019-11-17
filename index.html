@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="container-fluid">
+            <div>
+                <div class="container">
+                    <div class="myform">
+                        <h1 id="title" class="text-center">Moringa School Survey Form</h1>
+                        <p id="description">Thank you for being part of Moringa School.</p>
+                        <form id="survey-form" onsubmit="event.preventDefault()">
+                            <div class="f orm-group">
+                                <label for="name" id="name-label">Name</label>
+                                <input type="text" id="name" required placeholder="Enter your name"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" id="email-label">Email</label>
+                                <input type="email" name="email" id="email" required placeholder="Enter your email"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="age" id="number-label">Age(optional)</label>
+                                <input type="number" id="number" required min="18" max="40" class="form-control"
+                                    placeholder="Please Enter your age">
+                            </div>
+                            <div class="form-group">
+                                <label for="options">Which option best describes your current stage?</label>
+                                <select name="role" id="dropdown" class="form-control">
+                                    <option value="select">Please select one option</option>
+                                    <option value="core">Moringa Core</option>
+                                    <option value="prep">Moringa Prep</option>
+                                    <option value="pre-prep">Pre-prep</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Would you recommend Moringa School to other students?</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="3" required name="optradio"> Definitely</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="3" required name="optradio"> May Be
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" value="3" required name="optradio"> I Will Not
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>What is your favourite thing in Moringa School?</label>
+                                <select class="form-control" id="dropdown">
+                                    <option value="challenges">Challenges</option>
+                                    <option value="projects">Projects</option>
+                                    <option value="community">Community</option>
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="4"> Projects
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="4"> Group Projects
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="4"> Learning Methodology
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="4"> Add Vanilla Javascript to LMS
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Any Commets Or Suggestions?</label>
+                                <textarea id="comments" class="input-textarea form-control" name="comment"
+                                    placeholder="Enter your comment here..."></textarea>
+                            </div>
+                            <button type="submit" value="submit" id="submit"
+                                class="btn btn-success form-control">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JAVASCRIPT LINKS -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
